@@ -1,0 +1,12 @@
+# data_path: The path to your evaluation dataset
+pretrained: # Your checkpoint path
+
+caption_length: 77 # 77 if you are using our CLIP pre-trained on DataComp, 323 if you are using our CLIP pre-trained on Recap-DataComp
+
+model: ViT-B-16
+seed: 0
+precision: 'amp_bfloat16'
+force_image_size: 224
+topk: 1
+num_workers: 8
+batch_size: 2048

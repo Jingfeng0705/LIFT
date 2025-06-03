@@ -1,0 +1,11 @@
+raw_text_data: /public/datasets/Recap-DataComp-1B-3550-metadata-valid # The path to the raw caption folder
+embedded_labels: # The path to the destination folder of caption embeddings
+llm_model: # The path to the LLM-based text encoder
+raw_text_num_samples: 1000000 # The total number of raw captions to be embedded
+
+global_batch_size: 800
+workers: 1
+caption_length: 77 # 77 if recaptioned is false, else 323
+recaptioned: false # if to use Recap-DataComp-1B or not
+logs: embed_label/logs # The offline embedding log path
+restart: true

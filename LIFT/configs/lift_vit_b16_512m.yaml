@@ -1,0 +1,41 @@
+train_data: /public/datasets/Recap-DataComp-1B-3550-imgs # The path to the image folder
+embedded_text_data: /public/datasets/Recap-DataComp-1B-3550-nvembed-labels-org # The path to the caption embedding folder
+
+# The model achitecture options
+text_embed_dim: 4096 # The text embedding dimension of the LLM-based text encoder
+projector_layers: 2
+
+warmup: 500
+workers: 8
+lr: 1e-3
+wd: 0.2
+beta1: 0.9
+beta2: 0.98
+eps: 1.0e-6
+global_batch_size: 16384
+simplistic_cos: false
+
+name: "lift_vit_b16_512m"
+model: "LIFT-ViT-B-16"
+train_num_samples: 256_000_000
+epochs: 2
+precision: 'amp_bfloat16'
+batch_size: 0
+seed: 0
+ddp_static_graph: true
+local_loss: true
+gather_with_grad: true
+force_image_size: 224
+grad_checkpointing: true
+
+logs: './logs'
+report_to: tensorboard
+log_every_n_steps: 64
+zeroshot_steps: 0
+val_steps: 0
+zeroshot_frequency: 0
+val_frequency: 0
+save_frequency: 1
+
+resume: latest
+save_most_recent: true

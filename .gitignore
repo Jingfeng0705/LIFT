@@ -1,0 +1,13 @@
+*.pyc
+.DS_Store
+
+LIFT/logs/
+LIFT/wandb/
+
+embed_label/logs/
+
+sbatch_logs/
+
+llm_checkpoints/
+
+extra_zeroshot_datasets/sugar_crepe/

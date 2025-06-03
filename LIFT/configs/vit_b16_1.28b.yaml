@@ -1,0 +1,38 @@
+train_data: /public/datasets/Recap-DataComp-1B-3550-imgs # The path to the image folder
+raw_text_data: /public/datasets/Recap-DataComp-1B-3550-metadata-valid # The path to the raw caption folder
+
+warmup: 500
+workers: 8
+lr: 1e-3
+wd: 0.2
+beta1: 0.9
+beta2: 0.98
+eps: 1.0e-6
+global_batch_size: 16384
+recaptioned: false # if to use Recap-DataComp-1B or not
+caption_length: 77 # 77 if recaptioned is false, else 323
+
+name: "vit_b16_1.28b"
+model: "ViT-B-16"
+train_num_samples: 426_000_000
+epochs: 3
+precision: 'amp_bfloat16'
+batch_size: 0
+seed: 0
+ddp_static_graph: true
+local_loss: true
+gather_with_grad: true
+force_image_size: 224
+grad_checkpointing: true
+
+logs: './logs'
+report_to: tensorboard
+log_every_n_steps: 64
+zeroshot_steps: 0
+val_steps: 0
+zeroshot_frequency: 0
+val_frequency: 0
+save_frequency: 1
+
+resume: latest
+save_most_recent: true

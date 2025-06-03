@@ -1,0 +1,14 @@
+# data_path: The path to your evaluation dataset
+pretrained: # Your checkpoint path
+llm_model: # The path or HF link to the LLM-based text encoder
+
+text_embed_dim: 4096
+projector_layers: 2 # The layer number of LIFT's projection head, 2 by default
+
+model: LIFT-ViT-B-16
+seed: 0
+precision: 'amp_bfloat16'
+force_image_size: 224
+topk: 1
+num_workers: 8
+batch_size: 2048
