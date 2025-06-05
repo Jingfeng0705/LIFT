@@ -12,7 +12,7 @@ The pipeline of LIFT, which adopts a dual-tower architecture similar to CLIP. LI
 > [Jingfeng Yang*](https://jingfeng0705.github.io/), [Ziyang Wu*](https://robinwu218.github.io/), [Yue Zhao](https://www.linkedin.com/in/zhaoyue---/), [Yi Ma](https://people.eecs.berkeley.edu/~yima/),  
 > UC Berkeley, The University of Hong Kong               
 
-[[`project page`](https://jingfeng0705.github.io/LIFT/lift.html)] [[`arxiv`]()] [[`pdf`]()] [[`bibtex`](#citation)]             
+[[`project page`](https://jingfeng0705.github.io/LIFT/lift.html)] [[`arxiv`](https://arxiv.org/abs/2506.04209)] [[`pdf`](https://arxiv.org/pdf/2506.04209)] [[`bibtex`](#citation)]             
 
 
 ## Updates
@@ -283,11 +283,14 @@ If you have any general questions, feel free to email us at [Jingfeng Yang](mail
 ## Citation
 If you find our work inspiring, please consider giving a star ⭐ and a citation!
 ```
-@article{wang2024segment,
-  title={Segment Anything without Supervision},
-  author={Wang, XuDong and Yang, Jingfeng and Darrell, Trevor},
-  journal={arXiv preprint arXiv:2406.20081},
-  year={2024}
+@misc{yang2025languageimagealignmentfixedtext,
+      title={Language-Image Alignment with Fixed Text Encoders}, 
+      author={Jingfeng Yang and Ziyang Wu and Yue Zhao and Yi Ma},
+      year={2025},
+      eprint={2506.04209},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2506.04209}, 
 }
 ```
 
