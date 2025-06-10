@@ -12,3 +12,4 @@ force_image_size: 224
 topk: 1
 num_workers: 8
 batch_size: 2048
+simplistic_cos: false

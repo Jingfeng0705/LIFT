@@ -33,6 +33,8 @@ def load_models(args, device):
     # control caption length in training args, model_kwargs will be merged into CLIP's config
     if args.caption_length and 'LIFT' not in args.model:
         model_kwargs['context_length'] = args.caption_length
+    if args.simplistic_cos:
+        model_kwargs['simplistic_cos'] = True
 
     model, _, _ = create_model_and_transforms(
         args.model,

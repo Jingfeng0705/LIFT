@@ -12,7 +12,7 @@ The pipeline of LIFT, which adopts a dual-tower architecture similar to CLIP. LI
 > [Jingfeng Yang*](https://jingfeng0705.github.io/), [Ziyang Wu*](https://robinwu218.github.io/), [Yue Zhao](https://www.linkedin.com/in/zhaoyue---/), [Yi Ma](https://people.eecs.berkeley.edu/~yima/),  
 > UC Berkeley, The University of Hong Kong               
 
-[[`project page`](https://jingfeng0705.github.io/LIFT/lift.html)] [[`arxiv`](https://arxiv.org/abs/2506.04209)] [[`pdf`](https://arxiv.org/pdf/2506.04209)] [[`bibtex`](#citation)]             
+[[`project page`](https://jingfeng0705.github.io/LIFT/)] [[`arxiv`](https://arxiv.org/abs/2506.04209)] [[`pdf`](https://arxiv.org/pdf/2506.04209)] [[`bibtex`](#citation)]             
 
 
 ## Updates
